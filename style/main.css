@@ -1,0 +1,119 @@
+:root{
+    /*Light Mode*/
+
+    --mainTextColour:#fff;
+    --secondaryTextColour:#adb0b1;
+    --mainLinkColour:rgb(30, 190,214);
+    --mainBorderColour:#2b3031;
+    --mainBackColour:#131415;
+}
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.5em;
+    box-sizing: border-box;
+    color: var(--mainTextColour);
+}
+body{
+    background-color: var(--mainBackColour);
+}
+main{
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+}
+p{
+    padding-left: 1em;
+}
+a{
+    text-decoration: none;
+    color: var(--secondaryTextColour);
+    font-weight: 600;
+}
+
+li{
+    list-style: none;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    /* column-gap: 3em; */
+    width: 100%;
+}
+.description{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+.intro{
+    padding-left: 2em;
+}
+.username{
+    font-size: 3em;
+}
+.avatar{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.email{
+    color: var(--mainTextColour);
+}
+.socials{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1em;
+}
+.socials a:hover{
+    color: var(--mainLinkColour);
+    transition: 0.3s;
+}
+.education{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.school{
+    border-left: 1px solid var(--mainBorderColour);
+}
+.cert{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+.techstack ul, .courses ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 0.5em;
+    font-size: 1.2em;
+    border-left: 1px solid var(--mainBorderColour);
+}
+.card{
+    border: 0.1em solid var(--mainBorderColour);
+    border-radius: 0.3em;
+    padding: 0.5em;
+}
+.projects{
+    display: flex;
+    flex-flow: column;
+}
+.projects div{
+    display: flex;
+    justify-content: space-between;
+}
+.projects h2, .projects p{
+    font-size: 1em;
+    font-weight: 100px;
+}
+.projects p{
+    text-align: right;
+    border-left: 1px solid var(--mainBorderColour);
+}
+.intern div{
+    display: flex;
+    justify-content: space-between;
+    border-left: 1px solid var(--mainBorderColour);
+}
